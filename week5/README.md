@@ -20,9 +20,9 @@ Imagine you just rescued a dog and you're deciding on a name. You found a file o
 
 1. Log into code.cs50.io using your GitHub account.
 2. Click inside the terminal window and execute cd.
-3. Execute wget https://cdn.cs50.net/2022/fall/labs/5/trie.zip followed by Enter in order to download a zip called trie.zip in your codespace. Take care not to overlook the space between wget and the following URL, or any other character for that matter!
-4. Now execute unzip trie.zip to create a folder called trie.
-You no longer need the ZIP file, so you can execute rm trie.zip and respond with “y” followed by Enter at the prompt.
+3. Execute `wget https://cdn.cs50.net/2022/fall/labs/5/trie.zip` followed by Enter in order to download a zip called trie.zip in your codespace. Take care not to overlook the space between wget and the following URL, or any other character for that matter!
+4. Now execute `unzip trie.zip` to create a folder called trie.
+You no longer need the ZIP file, so you can execute `rm trie.zip` and respond with “y” followed by Enter at the prompt.
 5. Finally, right-click or control-click on the trie folder and click “Open in CS50 Lab”. You should see the specification for this problem on the left-hand side and its distribution code on the right-hand side.
 
 ## Implementation Details
