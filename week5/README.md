@@ -16,6 +16,15 @@ Imagine you just rescued a dog and you're deciding on a name. You found a file o
 
 <script async data-autoplay="1" data-cols="100" data-loop="1" data-rows="12" id="asciicast-JukHED1VvaJLFHMJbIvLksgF1" src="https://asciinema.org/a/JukHED1VvaJLFHMJbIvLksgF1.js" async></script>
 
+## Getting Started 
+
+1. Log into code.cs50.io using your GitHub account.
+2. Click inside the terminal window and execute cd.
+3. Execute wget https://cdn.cs50.net/2022/fall/labs/5/trie.zip followed by Enter in order to download a zip called trie.zip in your codespace. Take care not to overlook the space between wget and the following URL, or any other character for that matter!
+4. Now execute unzip trie.zip to create a folder called trie.
+You no longer need the ZIP file, so you can execute rm trie.zip and respond with “y” followed by Enter at the prompt.
+5. Finally, right-click or control-click on the trie folder and click “Open in CS50 Lab”. You should see the specification for this problem on the left-hand side and its distribution code on the right-hand side.
+
 ## Implementation Details
 
 Notice that the trie itself is implemented through the creative use of several `struct`s called `node`. Each `node` in a trie has an array of (potential) children, with size 26—one potential child for each letter of the alphabet! Adding words to this trie, notice that—for every letter in a word—we create a new `node` child whose parent is either the `root` node (for the first letter) or the previous letter (if not the first letter). On the very last letter, we set the `is_word` attribute of the child `node` to `true`. Now, checking if a word is in our trie is as easy as following each letter of that word through our trie. If we get to the final letter and see that `is_word` is true, well, that name is in our trie!
